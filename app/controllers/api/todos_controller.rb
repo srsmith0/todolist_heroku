@@ -7,7 +7,7 @@ class Api::TodosController < ApplicationController
     todo = Todo.create(name: params[:name])
     render json: todo
   end
-
+#d
   def update
     todo = Todo.find(params[:id])
     todo.update(complete: !todo.complete)
